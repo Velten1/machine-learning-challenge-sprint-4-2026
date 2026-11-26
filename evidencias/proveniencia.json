@@ -1,0 +1,178 @@
+{
+  "repositorio_origem": "https://github.com/Velten1/Agroguard",
+  "commit_origem": "f7175434f2dab4f3109f832a83515b0d9a54e599",
+  "arquivos": {
+    "ia/generate_dataset.py": {
+      "sha256": "51c298e226b04015b2ff24d4902d84dacfe7e707d2e28857bb0ae633738a5909",
+      "copiado_sem_alteracao": true
+    },
+    "ia/data/dataset_completo.csv": {
+      "sha256": "80cb7502f62c7a39b41954e32cd54887421e7e1714e137ce930005fe3482ba99",
+      "copiado_sem_alteracao": true
+    },
+    "ia/data/trator_antigo.csv": {
+      "sha256": "25afd409bbc0b6d3c77e6f68a4343039567f0b2855ecd65542bfe3ea64144019",
+      "copiado_sem_alteracao": true
+    },
+    "ia/data/trator_critico.csv": {
+      "sha256": "aae0e6405aab1dbc56448876199376f961847def36e7c40c622fd294897686cb",
+      "copiado_sem_alteracao": true
+    },
+    "ia/data/trator_novo.csv": {
+      "sha256": "53c1de50944d97caa580ed698fac41d0be26539cc5b779fd479f4589d26c7de6",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/engine.py": {
+      "sha256": "4d5398154876d1f8987deb0b34d4d265e07743abd1a626da05e77803c4867e00",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/main.py": {
+      "sha256": "53c098c50539036dd7abcddaf3e0a6b4e14e70ef6bb43438d7664faec607a451",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/package.json": {
+      "sha256": "82965d582dcca167de399b13c3fb80d0c954a8980ec1b99e6e4ff678e564b5f2",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/requirements.txt": {
+      "sha256": "fd9da288cb14a6279f70b44043ec069a14825bedb89ce79d380340feb0513c81",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/run.py": {
+      "sha256": "1d485dd6141e88f0704c156430a5d68984f394799150ee9ba8391d81c1e6a263",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/start.sh": {
+      "sha256": "b8c49202233abec4ca9fa703b2faee565a3a87542bed45ce00dd928cd37d2f42",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/test_infer_buffer.py": {
+      "sha256": "da5daadd1f3d6edd0cfec2b244e9afd164fa435d031747b4ca99ec286a87fd55",
+      "copiado_sem_alteracao": true
+    },
+    "ia/notebooks/Sprint2_EDA.ipynb": {
+      "sha256": "5edac3ada92060401741f9456141bc2ec54bd68d2493ebaf0788530b56636320",
+      "copiado_sem_alteracao": false
+    },
+    "ia/notebooks/treino_isolation_forest.ipynb": {
+      "sha256": "03d9789ad368065de16b7aee057f5e1c776f2d91300fe56b89992128a4756338",
+      "copiado_sem_alteracao": false
+    },
+    "ia/scripts/generate_demo_antigo.py": {
+      "sha256": "62824a7e31fdeec3bc13449b0afed6f2bc41163c6196f1a465677fd475e9170b",
+      "copiado_sem_alteracao": true
+    },
+    "ia/scripts/generate_demo_critico.py": {
+      "sha256": "793dcabe4c975ed972ee56736c9fd0b87216668567a1c436bbbe0e6d2a99ed85",
+      "copiado_sem_alteracao": true
+    },
+    "ia/scripts/generate_demo_novo.py": {
+      "sha256": "6725714d5ef623548e9f632f7c0f636376d77ee403ce644329114c7435a54804",
+      "copiado_sem_alteracao": true
+    },
+    "ia/scripts/treinar_streaming.py": {
+      "sha256": "4508b660661c5948af8de9efa46a6755edc47b92ffb00bc48011f0172550a4e4",
+      "copiado_sem_alteracao": true
+    },
+    "ia/models/trator_antigo/freios.joblib": {
+      "sha256": "ffd5a9154085362eb7412a2c6145a1b323f5c8e6b46f5a50f8cb44e9dfcc74e7",
+      "copiado_sem_alteracao": true
+    },
+    "ia/models/trator_antigo/hidraulico.joblib": {
+      "sha256": "a129432da4051d2e605a31864c27b0e62acfcaeaba1a6e4cfba93ba1670dc64d",
+      "copiado_sem_alteracao": true
+    },
+    "ia/models/trator_antigo/metadata.json": {
+      "sha256": "6f28c61ec706322e81d5ea773324ed706ae099974f59b86e333d791c481750d6",
+      "copiado_sem_alteracao": true
+    },
+    "ia/models/trator_antigo/motor.joblib": {
+      "sha256": "fb4234fd515032f8a512c7b51b8c44943a0d9fbab3ba6a188716197c36348b0c",
+      "copiado_sem_alteracao": true
+    },
+    "ia/models/trator_antigo/transmissao.joblib": {
+      "sha256": "85a0705223751917f1ca1938b1f8df56a553aa5197324beb5308c1ff63479bc0",
+      "copiado_sem_alteracao": true
+    },
+    "ia/models/trator_critico/freios.joblib": {
+      "sha256": "c9188f32a5b5a54d7251d103b343fb6a88aa2e333dc481d6a5d7d5a098fbdbb0",
+      "copiado_sem_alteracao": true
+    },
+    "ia/models/trator_critico/hidraulico.joblib": {
+      "sha256": "6d95d36893baf4bf7907f744a19e000577cc7e2238c3250a173963ca344694ec",
+      "copiado_sem_alteracao": true
+    },
+    "ia/models/trator_critico/metadata.json": {
+      "sha256": "f15c63fdc6fa83ca8e1b0caab958a132cbbf8f0cb99df1936a043b1049ff4f4e",
+      "copiado_sem_alteracao": true
+    },
+    "ia/models/trator_critico/motor.joblib": {
+      "sha256": "ad137e6ad54da0200b3dd5a7d5501f68d0374e3272e05f472d3442ff378381a2",
+      "copiado_sem_alteracao": true
+    },
+    "ia/models/trator_critico/transmissao.joblib": {
+      "sha256": "c838b1e74cf75fae98ce98de7a22ff064622c80842167674c269ec14f1d90f43",
+      "copiado_sem_alteracao": true
+    },
+    "ia/models/trator_novo/freios.joblib": {
+      "sha256": "4e4b955263c63fd42a4ae61e9e863e95fae1ea49364f884ab56377063838f635",
+      "copiado_sem_alteracao": true
+    },
+    "ia/models/trator_novo/hidraulico.joblib": {
+      "sha256": "332d81de225d63d3bfc5238637f597a954e1b4367a83f7c31db5e3f2fda85772",
+      "copiado_sem_alteracao": true
+    },
+    "ia/models/trator_novo/metadata.json": {
+      "sha256": "a3630d5ad1290570c39169b42095a1f887c7a9ff6f5fe6a5e3e7d42842a895f2",
+      "copiado_sem_alteracao": true
+    },
+    "ia/models/trator_novo/motor.joblib": {
+      "sha256": "511d2ebe8195c5e9525d8c05ecaf2c0732fc26b73637917870cf51de6ca225bc",
+      "copiado_sem_alteracao": true
+    },
+    "ia/models/trator_novo/transmissao.joblib": {
+      "sha256": "27f24508de63746682fc25cf8b6f1a573c836b4fd53ba200cb28f45c79f61545",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/app/__init__.py": {
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/app/controllers/infer_controller.py": {
+      "sha256": "9a4760099844c3ccfad9b4e4dbc21e4dbe7527130cc0fd8e24408b45dada5aa1",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/app/controllers/__init__.py": {
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/app/routes/infer.py": {
+      "sha256": "e14020ac2af65588c8db399900226e48d77baa20432f2ecb6cf6b13a36f4e2fa",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/app/routes/__init__.py": {
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/app/schemas/telemetria.py": {
+      "sha256": "ee00f3fdbd0679afae1a8ac3a2369c23c25497af6680150aaf9dd8267ab47003",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/app/schemas/__init__.py": {
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/app/services/explanation_service.py": {
+      "sha256": "3a74e78cba821573f2352ec7b33795c2a3a6d1cb10347fceed4445baebdcb787",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/app/services/inference_service.py": {
+      "sha256": "decaaaaa30c8f6b50779fbe09bf434695a7d9627fa18d12fcf31d5c8fc1b30f9",
+      "copiado_sem_alteracao": true
+    },
+    "ia/ml-service/app/services/__init__.py": {
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "copiado_sem_alteracao": true
+    }
+  }
+}

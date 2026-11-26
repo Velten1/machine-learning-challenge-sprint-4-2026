@@ -1,0 +1,10 @@
+{
+  "name": "agroguard-ml-service",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "python run.py --reload",
+    "start": "python run.py",
+    "dev:venv": "..\\..\\.venv\\Scripts\\python.exe run.py --reload"
+  }
+}

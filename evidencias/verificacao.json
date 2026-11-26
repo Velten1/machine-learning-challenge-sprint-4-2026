@@ -1,0 +1,86 @@
+{
+  "origem": "artefatos preexistentes do AgroGuard",
+  "commit_origem": "f7175434f2dab4f3109f832a83515b0d9a54e599",
+  "escopo": "checagem retrospectiva na base sintetica de desenvolvimento, sem holdout independente",
+  "treinamento_nesta_verificacao": false,
+  "observacao_timestamp": {
+    "http": 200,
+    "limite": "o schema recebe timestamp como string sem validacao semantica estrita"
+  },
+  "dados": [
+    {
+      "equipamento": "trator_novo",
+      "registros": 3432,
+      "colunas": 29,
+      "normais": 3288,
+      "anomalias": 144,
+      "nulos": 0,
+      "infinitos": 0,
+      "duplicatas": 0,
+      "inicio": "2026-01-05T07:00:00",
+      "fim": "2026-02-03T17:55:00"
+    },
+    {
+      "equipamento": "trator_antigo",
+      "registros": 3432,
+      "colunas": 29,
+      "normais": 2656,
+      "anomalias": 776,
+      "nulos": 0,
+      "infinitos": 0,
+      "duplicatas": 0,
+      "inicio": "2026-01-05T07:00:00",
+      "fim": "2026-02-03T17:55:00"
+    },
+    {
+      "equipamento": "trator_critico",
+      "registros": 3432,
+      "colunas": 29,
+      "normais": 2450,
+      "anomalias": 982,
+      "nulos": 0,
+      "infinitos": 0,
+      "duplicatas": 0,
+      "inicio": "2026-01-05T07:00:00",
+      "fim": "2026-02-03T17:55:00"
+    }
+  ],
+  "verificacoes": [
+    {
+      "teste": "GET /health e carregamento dos 12 artefatos",
+      "resultado": "aprovado"
+    },
+    {
+      "teste": "trator_novo dados, equivalência batch/streaming, inferência completa e warm-up",
+      "resultado": "aprovado"
+    },
+    {
+      "teste": "trator_antigo dados, equivalência batch/streaming, inferência completa e warm-up",
+      "resultado": "aprovado"
+    },
+    {
+      "teste": "trator_critico dados, equivalência batch/streaming, inferência completa e warm-up",
+      "resultado": "aprovado"
+    },
+    {
+      "teste": "buffer vazio",
+      "resultado": "aprovado",
+      "http": 422
+    },
+    {
+      "teste": "perfil inexistente",
+      "resultado": "aprovado",
+      "http": 400
+    },
+    {
+      "teste": "mais de seis leituras",
+      "resultado": "aprovado",
+      "http": 422
+    },
+    {
+      "teste": "RPM negativo rejeitado",
+      "resultado": "aprovado",
+      "http": 422
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "equipamento_id": "trator_novo",
+  "perfil": "saudavel",
+  "seed": 42,
+  "roll_window": 6,
+  "regimes": [
+    "campo",
+    "transporte",
+    "ralenti",
+    "parado"
+  ],
+  "score_faixas": {
+    "verde": [
+      0,
+      30
+    ],
+    "amarelo": [
+      31,
+      60
+    ],
+    "laranja": [
+      61,
+      80
+    ],
+    "vermelho": [
+      81,
+      100
+    ]
+  },
+  "componentes": {
+    "motor": {
+      "base_features": [
+        "temp_arrefecimento_c",
+        "rpm_motor",
+        "pressao_oleo_motor_bar",
+        "temp_oleo_motor_c",
+        "consumo_combustivel_lh"
+      ],
+      "feature_cols": [
+        "temp_arrefecimento_c",
+        "temp_arrefecimento_c_roll_std",
+        "temp_arrefecimento_c_delta",
+        "rpm_motor",
+        "rpm_motor_roll_std",
+        "rpm_motor_delta",
+        "pressao_oleo_motor_bar",
+        "pressao_oleo_motor_bar_roll_std",
+        "pressao_oleo_motor_bar_delta",
+        "temp_oleo_motor_c",
+        "temp_oleo_motor_c_roll_std",
+        "temp_oleo_motor_c_delta",
+        "consumo_combustivel_lh",
+        "consumo_combustivel_lh_roll_std",
+        "consumo_combustivel_lh_delta",
+        "regime_campo",
+        "regime_transporte",
+        "regime_ralenti",
+        "regime_parado"
+      ],
+      "calibracao_severidade": {
+        "raw_anchors": [
+          0.5339718512522998,
+          1.2140833670578712,
+          5.992148282995131,
+          10.16340171702785,
+          20.879887858579842,
+          22.163766356400945
+        ],
+        "score_anchors": [
+          0.0,
+          15.0,
+          40.0,
+          70.0,
+          90.0,
+          100.0
+        ]
+      },
+      "threshold": 31.0,
+      "if_gate": 0.6584281565934709,
+      "baselines": {
+        "temp_arrefecimento_c": {
+          "global": {
+            "mean": 89.57,
+            "std": 3.3061979999999846
+          },
+          "campo": {
+            "mean": 91.465,
+            "std": 2.172009000000005
+          },
+          "transporte": {
+            "mean": 87.9,
+            "std": 1.7049899999999978
+          },
+          "ralenti": {
+            "mean": 79.82499999999999,
+            "std": 2.312856000000003
+          }
+        },
+        "rpm_motor": {
+          "global": {
+            "mean": 1668.5,
+            "std": 119.3493
+          },
+          "campo": {
+            "mean": 1851.0,
+            "std": 192.738
+          },
+          "transporte": {
+            "mean": 1630.0,
+            "std": 35.5824
+          },
+          "ralenti": {
+            "mean": 888.0,
+            "std": 29.837325
+          }
+        },
+        "pressao_oleo_motor_bar": {
+          "global": {
+            "mean": 3.42,
+            "std": 0.2372160000000002
+          },
+          "campo": {
+            "mean": 3.44,
+            "std": 0.19273799999999983
+          },
+          "transporte": {
+            "mean": 3.45,
+            "std": 0.2223900000000005
+          },
+          "ralenti": {
+            "mean": 1.05,
+            "std": 0.05930400000000005
+          }
+        },
+        "temp_oleo_motor_c": {
+          "global": {
+            "mean": 103.57,
+            "std": 3.3061979999999846
+          },
+          "campo": {
+            "mean": 105.465,
+            "std": 2.172009000000005
+          },
+          "transporte": {
+            "mean": 101.9,
+            "std": 1.7049899999999978
+          },
+          "ralenti": {
+            "mean": 93.82499999999999,
+            "std": 2.312856000000003
+          }
+        },
+        "consumo_combustivel_lh": {
+          "global": {
+            "mean": 25.48,
+            "std": 4.699842000000002
+          },
+          "campo": {
+            "mean": 27.38,
+            "std": 1.645685999999999
+          },
+          "transporte": {
+            "mean": 21.405,
+            "std": 1.1749605000000005
+          },
+          "ralenti": {
+            "mean": 10.995000000000001,
+            "std": 1.1749605000000005
+          }
+        }
+      }
+    },
+    "transmissao": {
+      "base_features": [
+        "pressao_oleo_transmissao_bar",
+        "rpm_tdp",
+        "vibracao_eixo_x_mms",
+        "vibracao_eixo_y_mms",
+        "vibracao_eixo_z_mms"
+      ],
+      "feature_cols": [
+        "pressao_oleo_transmissao_bar",
+        "pressao_oleo_transmissao_bar_roll_std",
+        "pressao_oleo_transmissao_bar_delta",
+        "rpm_tdp",
+        "rpm_tdp_roll_std",
+        "rpm_tdp_delta",
+        "vibracao_eixo_x_mms",
+        "vibracao_eixo_x_mms_roll_std",
+        "vibracao_eixo_x_mms_delta",
+        "vibracao_eixo_y_mms",
+        "vibracao_eixo_y_mms_roll_std",
+        "vibracao_eixo_y_mms_delta",
+        "vibracao_eixo_z_mms",
+        "vibracao_eixo_z_mms_roll_std",
+        "vibracao_eixo_z_mms_delta",
+        "regime_campo",
+        "regime_transporte",
+        "regime_ralenti",
+        "regime_parado"
+      ],
+      "calibracao_severidade": {
+        "raw_anchors": [
+          0.6744907594765952,
+          1.4453373417355624,
+          6.263128480854103,
+          13.152569809793617,
+          38.61459598003508,
+          41.846530869193764
+        ],
+        "score_anchors": [
+          0.0,
+          15.0,
+          40.0,
+          70.0,
+          90.0,
+          100.0
+        ]
+      },
+      "threshold": 31.0,
+      "if_gate": 0.5731417643588373,
+      "baselines": {
+        "pressao_oleo_transmissao_bar": {
+          "global": {
+            "mean": 17.86,
+            "std": 1.0674719999999982
+          },
+          "campo": {
+            "mean": 17.99,
+            "std": 0.9488639999999955
+          },
+          "transporte": {
+            "mean": 17.97,
+            "std": 0.9785160000000002
+          },
+          "ralenti": {
+            "mean": 15.01,
+            "std": 0.8747339999999998
+          }
+        },
+        "rpm_tdp": {
+          "global": {
+            "mean": 529.0,
+            "std": 34.099799999999995
+          },
+          "campo": {
+            "mean": 540.0,
+            "std": 8.524949999999999
+          },
+          "transporte": {
+            "mean": 0.0,
+            "std": 8.524949999999999
+          },
+          "ralenti": {
+            "mean": 0.0,
+            "std": 8.524949999999999
+          }
+        },
+        "vibracao_eixo_x_mms": {
+          "global": {
+            "mean": 0.99,
+            "std": 0.2520419999999999
+          },
+          "campo": {
+            "mean": 1.1,
+            "std": 0.20756399999999983
+          },
+          "transporte": {
+            "mean": 0.91,
+            "std": 0.177912
+          },
+          "ralenti": {
+            "mean": 0.5,
+            "std": 0.11860800000000002
+          }
+        },
+        "vibracao_eixo_y_mms": {
+          "global": {
+            "mean": 0.94,
+            "std": 0.2520419999999999
+          },
+          "campo": {
+            "mean": 1.05,
+            "std": 0.20756399999999983
+          },
+          "transporte": {
+            "mean": 0.85,
+            "std": 0.177912
+          },
+          "ralenti": {
+            "mean": 0.5,
+            "std": 0.11860800000000002
+          }
+        },
+        "vibracao_eixo_z_mms": {
+          "global": {
+            "mean": 0.73,
+            "std": 0.22239000000000003
+          },
+          "campo": {
+            "mean": 0.84,
+            "std": 0.207564
+          },
+          "transporte": {
+            "mean": 0.65,
+            "std": 0.16308599999999998
+          },
+          "ralenti": {
+            "mean": 0.49,
+            "std": 0.10378200000000008
+          }
+        }
+      }
+    },
+    "hidraulico": {
+      "base_features": [
+        "pressao_hidraulica_bar",
+        "temp_oleo_hidraulico_c",
+        "vazao_bomba_lmin"
+      ],
+      "feature_cols": [
+        "pressao_hidraulica_bar",
+        "pressao_hidraulica_bar_roll_std",
+        "pressao_hidraulica_bar_delta",
+        "temp_oleo_hidraulico_c",
+        "temp_oleo_hidraulico_c_roll_std",
+        "temp_oleo_hidraulico_c_delta",
+        "vazao_bomba_lmin",
+        "vazao_bomba_lmin_roll_std",
+        "vazao_bomba_lmin_delta",
+        "regime_campo",
+        "regime_transporte",
+        "regime_ralenti",
+        "regime_parado"
+      ],
+      "calibracao_severidade": {
+        "raw_anchors": [
+          0.43420907371653905,
+          1.145560579435347,
+          5.444779378485092,
+          8.878693782455866,
+          14.188111505225322,
+          15.42869839153792
+        ],
+        "score_anchors": [
+          0.0,
+          15.0,
+          40.0,
+          70.0,
+          90.0,
+          100.0
+        ]
+      },
+      "threshold": 31.0,
+      "if_gate": 0.6372441998678545,
+      "baselines": {
+        "pressao_hidraulica_bar": {
+          "global": {
+            "mean": 178.48000000000002,
+            "std": 20.608139999999985
+          },
+          "campo": {
+            "mean": 185.23,
+            "std": 5.152034999999996
+          },
+          "transporte": {
+            "mean": 40.88,
+            "std": 5.152034999999996
+          },
+          "ralenti": {
+            "mean": 37.97,
+            "std": 5.152034999999996
+          }
+        },
+        "temp_oleo_hidraulico_c": {
+          "global": {
+            "mean": 73.42,
+            "std": 4.314365999999994
+          },
+          "campo": {
+            "mean": 75.74000000000001,
+            "std": 3.1727640000000217
+          },
+          "transporte": {
+            "mean": 70.52,
+            "std": 3.150525
+          },
+          "ralenti": {
+            "mean": 70.775,
+            "std": 3.0838079999999866
+          }
+        },
+        "vazao_bomba_lmin": {
+          "global": {
+            "mean": 96.215,
+            "std": 24.937331999999998
+          },
+          "campo": {
+            "mean": 104.985,
+            "std": 6.2343329999999995
+          },
+          "transporte": {
+            "mean": 24.735,
+            "std": 8.124648
+          },
+          "ralenti": {
+            "mean": 11.925,
+            "std": 6.2343329999999995
+          }
+        }
+      }
+    },
+    "freios": {
+      "base_features": [
+        "pressao_freio_bar",
+        "desaceleracao_ms2",
+        "temp_freio_c"
+      ],
+      "feature_cols": [
+        "pressao_freio_bar",
+        "pressao_freio_bar_roll_std",
+        "pressao_freio_bar_delta",
+        "desaceleracao_ms2",
+        "desaceleracao_ms2_roll_std",
+        "desaceleracao_ms2_delta",
+        "temp_freio_c",
+        "temp_freio_c_roll_std",
+        "temp_freio_c_delta",
+        "regime_campo",
+        "regime_transporte",
+        "regime_ralenti",
+        "regime_parado"
+      ],
+      "calibracao_severidade": {
+        "raw_anchors": [
+          0.06508244170388162,
+          0.7336566155710342,
+          5.384469757180451,
+          8.77983619182802,
+          15.0429189120109,
+          15.66830201092911
+        ],
+        "score_anchors": [
+          0.0,
+          15.0,
+          40.0,
+          70.0,
+          90.0,
+          100.0
+        ]
+      },
+      "threshold": 31.0,
+      "if_gate": 0.6462838073929656,
+      "baselines": {
+        "pressao_freio_bar": {
+          "global": {
+            "mean": 0.0,
+            "std": 9.315259259259248
+          },
+          "campo": {
+            "mean": 0.0,
+            "std": 8.275407407407405
+          },
+          "transporte": {
+            "mean": 0.0,
+            "std": 9.881111111111105
+          },
+          "ralenti": {
+            "mean": 0.0,
+            "std": 2.328814814814812
+          }
+        },
+        "desaceleracao_ms2": {
+          "global": {
+            "mean": 0.0,
+            "std": 1.037999999999999
+          },
+          "campo": {
+            "mean": 0.0,
+            "std": 0.8729629629629614
+          },
+          "transporte": {
+            "mean": 0.0,
+            "std": 1.1151851851851846
+          },
+          "ralenti": {
+            "mean": 0.0,
+            "std": 0.25949999999999973
+          }
+        },
+        "temp_freio_c": {
+          "global": {
+            "mean": 70.39500000000001,
+            "std": 4.410734999999991
+          },
+          "campo": {
+            "mean": 72.64500000000001,
+            "std": 3.4915230000000057
+          },
+          "transporte": {
+            "mean": 67.69,
+            "std": 3.3803280000000013
+          },
+          "ralenti": {
+            "mean": 67.845,
+            "std": 3.439632
+          }
+        }
+      }
+    }
+  }
+}

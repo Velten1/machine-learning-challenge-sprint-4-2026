@@ -1,0 +1,50 @@
+{
+  "servidor": "uvicorn local",
+  "porta": 8885,
+  "health": {
+    "status": "ok",
+    "equipamentos": [
+      "trator_novo",
+      "trator_antigo",
+      "trator_critico"
+    ]
+  },
+  "casos": [
+    {
+      "caso": "trator_novo_normal",
+      "http": 200,
+      "risco_geral": 16.5,
+      "confiavel": true
+    },
+    {
+      "caso": "trator_novo_anomalia",
+      "http": 200,
+      "risco_geral": 39.8,
+      "confiavel": true
+    },
+    {
+      "caso": "trator_antigo_normal",
+      "http": 200,
+      "risco_geral": 17.1,
+      "confiavel": true
+    },
+    {
+      "caso": "trator_antigo_anomalia",
+      "http": 200,
+      "risco_geral": 71.1,
+      "confiavel": true
+    },
+    {
+      "caso": "trator_critico_normal",
+      "http": 200,
+      "risco_geral": 31.0,
+      "confiavel": true
+    },
+    {
+      "caso": "trator_critico_anomalia",
+      "http": 200,
+      "risco_geral": 68.8,
+      "confiavel": true
+    }
+  ]
+}

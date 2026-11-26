@@ -1,0 +1,13 @@
+equipamento,componente,anomalias_GT,limiar,acuracia,acc_balanceada,precision,recall,f1,roc_auc,pr_auc,aprendeu
+trator_novo,motor,166,43.4,0.794,0.820,0.171,0.849,0.285,0.845,0.129,Bom
+trator_novo,transmissao,0,50.0,0.682,NaN,0.000,0.000,0.000,NaN,NaN,s/ anomalia
+trator_novo,hidraulico,0,50.0,0.687,NaN,0.000,0.000,0.000,NaN,NaN,s/ anomalia
+trator_novo,freios,0,50.0,0.663,NaN,0.000,0.000,0.000,NaN,NaN,s/ anomalia
+trator_antigo,motor,305,21.4,0.571,0.691,0.152,0.836,0.257,0.685,0.123,Razoável
+trator_antigo,transmissao,241,65.0,0.705,0.788,0.178,0.884,0.296,0.811,0.163,Bom
+trator_antigo,hidraulico,108,33.7,0.582,0.739,0.064,0.907,0.120,0.714,0.051,Bom
+trator_antigo,freios,4,100.0,0.900,0.950,0.012,1.000,0.023,0.950,0.012,Excelente
+trator_critico,motor,65,33.2,0.737,0.783,0.057,0.831,0.107,0.789,0.040,Bom
+trator_critico,transmissao,461,100.0,0.910,0.947,0.598,0.998,0.748,0.948,0.598,Excelente
+trator_critico,hidraulico,385,29.7,0.620,0.762,0.221,0.945,0.358,0.756,0.218,Bom
+trator_critico,freios,36,98.7,0.880,0.870,0.071,0.861,0.131,0.926,0.068,Excelente
